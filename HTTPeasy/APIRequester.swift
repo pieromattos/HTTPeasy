@@ -28,7 +28,7 @@ public class APIRequester: Requester {
 
     // MARK: - Properties
 
-    private var session: Session
+    internal var session: Session
 
     // MARK: - Initialization
 

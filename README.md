@@ -1,5 +1,5 @@
 #  HTTPeasy
-![](https://img.shields.io/badge/platform-iOS10+-blue.svg) ![](https://img.shields.io/badge/Swift-4+-orange.svg) ![](https://img.shields.io/badge/coverage-95%25-green.svg) ![](https://img.shields.io/badge/carthage-compatible-blueviolet.svg)
+![](https://img.shields.io/badge/platform-iOS10+-blue.svg) ![](https://img.shields.io/badge/Swift-4+-orange.svg) ![](https://img.shields.io/badge/coverage-94%25-green.svg) ![](https://img.shields.io/badge/carthage-compatible-blueviolet.svg)
 
 ## Description
 

@@ -17,7 +17,7 @@ class APIRequesterTests: XCTestCase {
         let testUrl = "https://website.com"
         let testParams = ["p1": "a", "p2": "b"]
         let testHeaders = ["Authentication": "abc"]
-        let testDescriptor = Request.Descriptor(method: testMethod, url: testUrl, params: testParams, headers: testHeaders)
+        let testDescriptor = Request.Descriptor(testMethod, testUrl, testParams, testHeaders)
 
         let urlSessionMock = URLSessionMock()
         let testInstance = APIRequester()
@@ -44,7 +44,7 @@ class APIRequesterTests: XCTestCase {
         let testMethod = Request.Method.POST
         let testParams = ["p1": "a", "p2": "b"]
         let testHeaders = ["Authentication": "abc"]
-        let testDescriptor = Request.Descriptor(method: testMethod, url: testUrl, params: testParams, headers: testHeaders)
+        let testDescriptor = Request.Descriptor(testMethod, testUrl, testParams, testHeaders)
 
         let data = Data()
         let response = HTTPURLResponse(url: URL(string: testUrl)!, statusCode: 200, httpVersion: "1.1", headerFields: nil)
@@ -68,7 +68,7 @@ class APIRequesterTests: XCTestCase {
         let testUrl = "https://website.com"
         let testParams = ["p1": "a", "p2": "b"]
         let testHeaders = ["Authentication": "abc"]
-        let testDescriptor = Request.Descriptor(method: testMethod, url: testUrl, params: testParams, headers: testHeaders)
+        let testDescriptor = Request.Descriptor(testMethod, testUrl, testParams, testHeaders)
 
         let response = HTTPURLResponse(url: URL(string: testUrl)!, statusCode: 501, httpVersion: "1.1", headerFields: nil)
         let urlSessionMock = URLSessionMock(desiredResponse: (nil, response, nil))

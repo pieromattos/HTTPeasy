@@ -17,7 +17,7 @@ class RequestTests: XCTestCase {
         let testParams = ["param1": "8", "param2": "abc"]
         let testHeaders = ["header1": "Some-Value", "header2": "AnotherValue"]
 
-        let testDescriptor = Request.Descriptor(method: testMethod, url: testUrl, params: testParams, headers: testHeaders)
+        let testDescriptor = Request.Descriptor(testMethod, testUrl, testParams, testHeaders)
 
         XCTAssertEqual(testMethod, testDescriptor.method)
         XCTAssertEqual(testUrl, testDescriptor.url)
