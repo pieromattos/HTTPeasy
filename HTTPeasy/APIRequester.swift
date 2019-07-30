@@ -15,7 +15,6 @@ internal protocol Session {
 
 extension URLSession: Session {}
 
-
 /// APIRequester is the default class from HTTPeasy that enables HTTP requests to be
 /// performed. If you do not need any customization of how requests are done, you
 /// should probably use the shared instance of this class to perform your requests.
