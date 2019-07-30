@@ -32,12 +32,19 @@ public class APIRequester: Requester {
 
     // MARK: - Initialization
 
-    private init() {
-        let sessionConfig = URLSessionConfiguration.default
-        sessionConfig.requestCachePolicy = .reloadIgnoringLocalCacheData
-        sessionConfig.timeoutIntervalForRequest = 60.0
-        sessionConfig.httpAdditionalHeaders = ["Content-Type": "application/json" ]
-        self.session = URLSession(configuration: sessionConfig)
+    /// Initializes a new instance of APIRequester
+    ///
+    /// - Parameter sessionConfiguration: an optional configuration object to be used for the requests.
+    public init(sessionConfiguration: URLSessionConfiguration? = nil) {
+        if let config = sessionConfiguration {
+            self.session = URLSession(configuration: config)
+        } else {
+            let sessionConfig = URLSessionConfiguration.default
+            sessionConfig.requestCachePolicy = .reloadIgnoringLocalCacheData
+            sessionConfig.timeoutIntervalForRequest = 60.0
+            sessionConfig.httpAdditionalHeaders = ["Content-Type": "application/json" ]
+            self.session = URLSession(configuration: sessionConfig)
+        }
     }
 
     // MARK: - Methods
