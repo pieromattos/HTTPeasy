@@ -74,5 +74,5 @@ APIRequester.shared.request(requestDescriptor) { data, error in
 
 If you have contributions or feedback to provide regarding this project, please do so by contacing me at piero_mattos@icloud.com.
 
-You can also find more information about me on my webstie at: [pmattos.me](pmattos.me).
+You can also find more information about me on my webstie at: [pmattos.me](https://pmattos.me).
 
