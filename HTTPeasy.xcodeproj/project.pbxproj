@@ -30,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6EB49B8A24969EA000A6C4E2 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		AED8212622EDFCEF00F5098C /* HTTPeasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HTTPeasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED8212A22EDFCEF00F5098C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AED8212F22EDFCEF00F5098C /* HTTPeasyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTTPeasyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +71,7 @@
 		AED8211C22EDFCEF00F5098C = {
 			isa = PBXGroup;
 			children = (
+				6EB49B8A24969EA000A6C4E2 /* Package.swift */,
 				AED8216122EE020000F5098C /* README.md */,
 				AED8216022EE015000F5098C /* .gitignore */,
 				AED8215F22EE015000F5098C /* .swiftlint.yml */,
@@ -222,6 +224,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = AED8211C22EDFCEF00F5098C;
 			productRefGroup = AED8212722EDFCEF00F5098C /* Products */;
@@ -466,11 +469,12 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pieromattos.HTTPeasy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -494,10 +498,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pieromattos.HTTPeasy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
