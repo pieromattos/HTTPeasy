@@ -1,5 +1,5 @@
 #  HTTPeasy
-![](https://img.shields.io/badge/platform-iOS10+-blue.svg) ![](https://img.shields.io/badge/Swift-4+-orange.svg) ![](https://img.shields.io/badge/coverage-94%25-green.svg) ![](https://img.shields.io/badge/carthage-compatible-blueviolet.svg)
+![](https://img.shields.io/badge/platform-iOS10+-blue.svg) ![](https://img.shields.io/badge/Swift-5+-orange.svg) ![](https://img.shields.io/badge/coverage-94%25-green.svg)
 
 ## Description
 
@@ -11,7 +11,9 @@ HTTPeasy let's you simply declare how you want your request to be performed (the
 
 ## Usage
 
-### Installation (using Carthage)
+### Installation
+
+#### Carthage
 
 In order to install HTTPeasy, all you need to do is add it as a dependency to your project's Cartfile.
 
@@ -20,6 +22,12 @@ github "pieromattos/HTTPeasy" ~> 1.0
 ```
 
 If you're not familiar with Carthage, you can learn more about it [over here](https://github.com/Carthage/Carthage).
+
+#### Swift Package Manager
+
+To install HTTPeasy as a Swift package, just add it to your project using Xcode's file menu.
+
+If you're not familiar with Swift Package Manager, you can learn more about it [over here](https://swift.org/package-manager/)
 
 ### API Documentation
 
@@ -72,7 +80,7 @@ APIRequester.shared.request(requestDescriptor) { data, error in
 
 ## Contributions and feedback
 
-If you have contributions or feedback to provide regarding this project, please do so by contacing me at piero_mattos@icloud.com.
+If you have contributions or feedback to provide regarding this project, please do so by contacing me at [piero@pmattos.com](mailto:piero@pmattos.com).
 
-You can also find more information about me on my webstie at: [pmattos.me](https://pmattos.me).
+You can also find more information about me on my webstie at: [pmattos.com](https://pmattos.com).
 
